@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro";
+}
+
+.hero-section{
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 12rem;
+    position: static;
+    background: transparent;
+
+}
+
+.nav-logo img {
+    width: 181px;
+    height: 32px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-weight: 700;
+    font-size: 13px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.hero-section-main {
+    padding-top: 18rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-section-main h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.hero-section-main button{
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    padding: 14px 36px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: #FF6565;
+    box-shadow: 2px 2px 2px black;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.hero-section-main h6{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.hero-section-main .lorem {
+    text-align: center;   
+    padding-bottom: 10rem; 
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.what-section{
+    background-color: #ffffff;
+    background-position: c0ver;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    color: #071629;
+}
+
+.section-h1{
+    size: 32px;
+}
+
+.what-p{
+    padding-top: 3rem;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.what-container{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    flex-grow: 1;
+    justify-content: center; 
+}
+
+.what-img{
+    width: 297px;
+    height: 180px;
+    padding-bottom: 2rem;
+}
+
+.what-img img {
+    padding-bottom: 2rem;
+    width: 74px;
+    height: 65px;
+}
+
+.what-container h1{
+    padding-bottom: 2rem;
+    font-size: 18px;
+}
+
+.what-container .what-lorem{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.results{
+    background-image: url(./images/headphones_hero_2.jpg);
+    position: static;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.results .h1 {
+    padding-bottom: 4rem;
+    font-size: 22px;
+}
+
+.pentagon-container {
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+    flex-wrap: wrap; 
+    flex-grow: 1;
+    justify-content: center; 
+}
+
+.pentagon {
+    background-image: url(./images/pentagone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pentagon h1 {
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.pentagon p {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.contact {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 6rem;
+    background-color: #fff;
+    color: #071629;
+    border-radius: 5px;
+    line-height: 1.6;
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-weight: 800;
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    background-color: transparent;
+}
+
+input::placeholder, textarea::placeholder {
+    color: transparent;
+}
+
+input:focus,
+textarea:focus,
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
+    border-bottom-color: #ff6b6b;
+}
+
+input:focus ~ label,
+textarea:focus ~ label,
+input:not(:placeholder-shown) ~ label,
+textarea:not(:placeholder-shown) ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #ff6b6b;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.contact button {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    align-self: center;
+    padding: 14px 36px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: #FF6565;
+    box-shadow: 2px 2px 2px black;
+    color: white;
+}
+
+footer {
+    background-color: #071629;
+    background-size: cover;
+    padding: 6rem 13rem 5%;
+    padding-bottom: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-container img {
+    max-width: 161px;
+    height: auto;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .svg {
+    background-color: #fff;
+    background-size: contain;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer svg {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.footer-last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    color: #ffffff6e;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+        position: relative;
+    }
+
+    .nav-logo {
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -150%;
+        width: 250px;
+        height: 100vh;
+        background-color: rgb(31, 40, 63);
+        transition: left 0.6s ease-in-out;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 60px;
+    }
+
+    nav ul li {
+        margin: 10px;
+        margin-left: 10px;
+    }
+
+    nav ul li a{
+        font-size: large;
+    }
+
+    nav ul li a:hover{
+        color: gray;
+        text-decoration: underline;
+        text-decoration-color: #dadde7;
+        text-underline-offset: 10px;
+    }
+
+    footer {
+        background-color: #071629;
+        background-size: cover;
+        padding: 6rem 8rem 10%;
+        padding-bottom: 2rem;
+    }
+}
